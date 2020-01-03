@@ -8,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
   componentes: Componente[] = [
     {
-      icon: 'appstore',
-      name: 'Alert',
-      redirectTo: '/alert'
-    },
-    {
       icon: 'american-football',
       name: 'Action Sheet',
       redirectTo: '/action-sheet'
+    },
+    {
+      icon: 'appstore',
+      name: 'Alert',
+      redirectTo: '/alert'
     }
   ];
 
