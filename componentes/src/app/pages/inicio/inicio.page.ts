@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inicio.page.scss'],
 })
 export class InicioPage implements OnInit {
+  componentes: Componente[] = [
+    {
+      icon: 'appstore',
+      name: 'Alert',
+      redirectTo: '/alert'
+    },
+    {
+      icon: 'american-football',
+      name: 'Action Sheet',
+      redirectTo: '/action-sheet'
+    }
+  ];
 
   constructor() { }
 
   ngOnInit() {
   }
-
+}
+interface Componente {
+  icon: string;
+  name: string;
+  redirectTo: string;
 }
